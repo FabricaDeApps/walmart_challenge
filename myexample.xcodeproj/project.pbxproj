@@ -16,6 +16,14 @@
 		D23013882AE031A400270DCA /* myexampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23013872AE031A400270DCA /* myexampleTests.swift */; };
 		D23013922AE031A400270DCA /* myexampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23013912AE031A400270DCA /* myexampleUITests.swift */; };
 		D23013942AE031A400270DCA /* myexampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23013932AE031A400270DCA /* myexampleUITestsLaunchTests.swift */; };
+		D23013A22AE0357500270DCA /* productModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23013A12AE0357500270DCA /* productModel.swift */; };
+		D23013A52AE0380600270DCA /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23013A42AE0380600270DCA /* ProductCell.swift */; };
+		D2BCF6A62AE04362005A2FF7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BCF6A52AE04362005A2FF7 /* CoreDataManager.swift */; };
+		D2C177232AE04AD30028969C /* MapExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C177222AE04AD30028969C /* MapExampleViewController.swift */; };
+		D2C177252AE04F990028969C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C177242AE04F990028969C /* UserModel.swift */; };
+		D2C540A92AE044F100F9DE77 /* ProductsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2C540A72AE044F100F9DE77 /* ProductsDataModel.xcdatamodeld */; };
+		D2C540B42AE0465000F9DE77 /* ProductsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C540B22AE0465000F9DE77 /* ProductsEntity+CoreDataClass.swift */; };
+		D2C540B52AE0465000F9DE77 /* ProductsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C540B32AE0465000F9DE77 /* ProductsEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		D230138D2AE031A400270DCA /* myexampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myexampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23013912AE031A400270DCA /* myexampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myexampleUITests.swift; sourceTree = "<group>"; };
 		D23013932AE031A400270DCA /* myexampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myexampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D23013A12AE0357500270DCA /* productModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productModel.swift; sourceTree = "<group>"; };
+		D23013A42AE0380600270DCA /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		D2BCF6A52AE04362005A2FF7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D2C177222AE04AD30028969C /* MapExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExampleViewController.swift; sourceTree = "<group>"; };
+		D2C177242AE04F990028969C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D2C540A82AE044F100F9DE77 /* ProductsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		D2C540B22AE0465000F9DE77 /* ProductsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D2C540B32AE0465000F9DE77 /* ProductsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,8 @@
 		D23013642AE031A200270DCA = {
 			isa = PBXGroup;
 			children = (
+				D2C540B22AE0465000F9DE77 /* ProductsEntity+CoreDataClass.swift */,
+				D2C540B32AE0465000F9DE77 /* ProductsEntity+CoreDataProperties.swift */,
 				D230136F2AE031A300270DCA /* myexample */,
 				D23013862AE031A400270DCA /* myexampleTests */,
 				D23013902AE031A400270DCA /* myexampleUITests */,
@@ -99,8 +117,12 @@
 		D230136F2AE031A300270DCA /* myexample */ = {
 			isa = PBXGroup;
 			children = (
+				D2BCF68F2AE03F98005A2FF7 /* coredata */,
+				D23013A32AE037FA00270DCA /* cells */,
+				D23013A02AE0355E00270DCA /* models */,
 				D23013702AE031A300270DCA /* AppDelegate.swift */,
 				D23013722AE031A300270DCA /* SceneDelegate.swift */,
+				D2C177222AE04AD30028969C /* MapExampleViewController.swift */,
 				D23013742AE031A300270DCA /* ViewController.swift */,
 				D23013762AE031A300270DCA /* Main.storyboard */,
 				D23013792AE031A400270DCA /* Assets.xcassets */,
@@ -125,6 +147,32 @@
 				D23013932AE031A400270DCA /* myexampleUITestsLaunchTests.swift */,
 			);
 			path = myexampleUITests;
+			sourceTree = "<group>";
+		};
+		D23013A02AE0355E00270DCA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D23013A12AE0357500270DCA /* productModel.swift */,
+				D2C177242AE04F990028969C /* UserModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D23013A32AE037FA00270DCA /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				D23013A42AE0380600270DCA /* ProductCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		D2BCF68F2AE03F98005A2FF7 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				D2BCF6A52AE04362005A2FF7 /* CoreDataManager.swift */,
+				D2C540A72AE044F100F9DE77 /* ProductsDataModel.xcdatamodeld */,
+			);
+			path = coredata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C540A92AE044F100F9DE77 /* ProductsDataModel.xcdatamodeld in Sources */,
 				D23013752AE031A300270DCA /* ViewController.swift in Sources */,
+				D2C540B42AE0465000F9DE77 /* ProductsEntity+CoreDataClass.swift in Sources */,
+				D23013A22AE0357500270DCA /* productModel.swift in Sources */,
+				D23013A52AE0380600270DCA /* ProductCell.swift in Sources */,
 				D23013712AE031A300270DCA /* AppDelegate.swift in Sources */,
 				D23013732AE031A300270DCA /* SceneDelegate.swift in Sources */,
+				D2BCF6A62AE04362005A2FF7 /* CoreDataManager.swift in Sources */,
+				D2C177232AE04AD30028969C /* MapExampleViewController.swift in Sources */,
+				D2C540B52AE0465000F9DE77 /* ProductsEntity+CoreDataProperties.swift in Sources */,
+				D2C177252AE04F990028969C /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +658,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2C540A72AE044F100F9DE77 /* ProductsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2C540A82AE044F100F9DE77 /* ProductsDataModel.xcdatamodel */,
+			);
+			currentVersion = D2C540A82AE044F100F9DE77 /* ProductsDataModel.xcdatamodel */;
+			path = ProductsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D23013652AE031A200270DCA /* Project object */;
 }

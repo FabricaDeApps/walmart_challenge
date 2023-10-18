@@ -32,5 +32,15 @@ final class myexampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testTotalEvenNumbers() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard
+            .instantiateViewController(withIdentifier: "ViewController") as! ViewController
+
+            let inputArray = [1, 2, 3, 4, 5, 6]
+        let result = viewController.totalEvenNumbers(in: inputArray)
+            XCTAssertEqual(result, 12, "El total debe ser 12")
+        }
 
 }
